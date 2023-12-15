@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+body {
+    background-color: #ffcc8e;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.timer-container {
+    text-align: center;
+}
+
+#timer {
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: black;
+    transition: color 0.3s ease-in;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#time-input {
+    height: 20px;
+    width: 220px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#texts{
+  margin: 10px;
+  font-family: Arial, sans-serif;
+}
+.controls {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+a span {
+    position: relative;
+    z-index: 2;
+}
+
+a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+#start-btn,
+#stop-btn,
+#reset-btn,
+#confirm-reset-btn {
+    margin: 10px;
+}
+
+#confirm-reset-btn {
+    display: none;
+}
