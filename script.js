@@ -1,4 +1,4 @@
-          let timer;
+        let timer;
         let timeInput = document.getElementById('time-input');
         let timerDisplay = document.getElementById('timer');
         let startBtn = document.getElementById('start-btn');
