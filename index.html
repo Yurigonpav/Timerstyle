@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="timer-container">
+        <h1 id="timer">00:00:00.000</h1>
+        <div class="controls">
+            <label id="texts" for="time-input">Definir Tempo (s): </label>
+            <input type="number" id="time-input" min="1" value="60">
+            <div class="wrapper">
+                <a id="start-btn" onclick="startTimer()"><span>Iniciar</span></a>
+                <a id="stop-btn" onclick="stopTimer()"><span>Parar</span></a>
+                <a id="reset-btn" onclick="showConfirmReset()"><span>Resetar</span></a>
+                <a id="confirm-reset-btn" onclick="confirmReset()"><span>Confirmar Reset</span></a>
+            </div>
+        </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
